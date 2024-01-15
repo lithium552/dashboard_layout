@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <main class="main-wrapper">
+          <div class="greeting">
+            <p class="greeting__text">Hello Evano 👋🏼,</p>
+          </div>
+          <div class="content">
+            <div class="content-header">
+              <div class="content-header-desc">
+                <h2 class="content-header-title">All Customers</h2>
+                <p class="content-header-subtitle">Active Members</p>
+              </div>
+              <div class="content-header-search">
+                <label class="content-header-search__label" for="search"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#7E7E7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 21L16.65 16.65" stroke="#7E7E7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </label>
+                <input class="content-header-search__input" type="text" placeholder="Search" id="search">
+              </div>
+            </div>
+            <div class="table-wrapper">
+              <table class="table">
+                <thead class="table-header">
+                  <tr class="table-header-row">           
+                    <th class="table-header__column">Customer Name</th>
+                    <th class="table-header__column">Company</th>
+                    <th class="table-header__column">Phone Number</th>
+                    <th class="table-header__column">Email</th>
+                    <th class="table-header__column">Country</th>
+                    <th class="table-header__column">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr class="table-body-row">
+                    <td class="table-body__column">Jane Cooper</td>
+                    <td class="table-body__column">Microsoft</td>
+                    <td class="table-body__column">(225) 555-0118</td>
+                    <td class="table-body__column">jane@microsoft.com</td>
+                    <td class="table-body__column">United States</td>
+                    <td class="table-body__column">
+                      <div class="table-body__column_active">Active</div>
+                    </td>
+                  </tr>
+                  <tr class="table-body-row">
+                    <td class="table-body__column">Floyd Miles</td>
+                    <td class="table-body__column">Yahoo</td>
+                    <td class="table-body__column">(205) 555-0100</td>
+                    <td class="table-body__column">floyd@yahoo.com</td>
+                    <td class="table-body__column">Kiribati</td>
+                    <td class="table-body__column">
+                      <div class="table-body__column_inactive">Inactive</div>
+                    </td>
+                  </tr>
+                  <tr class="table-body-row">
+                    <td class="table-body__column">Ronald Richards</td>
+                    <td class="table-body__column">Adobe</td>
+                    <td class="table-body__column">(302) 555-0107</td>
+                    <td class="table-body__column">ronald@adobe.com</td>
+                    <td class="table-body__column">Israel</td>
+                    <td class="table-body__column">
+                      <div class="table-body__column_inactive">Inactive</div>
+                    </td>
+                  </tr>
+                  <tr class="table-body-row">
+                    <td class="table-body__column">Marvin McKinney</td>
+                    <td class="table-body__column">Tesla</td>
+                    <td class="table-body__column">(252) 555-0126</td>
+                    <td class="table-body__column">marvin@tesla.com</td>
+                    <td class="table-body__column">Iran</td>
+                    <td class="table-body__column">
+                      <div class="table-body__column_active">Active</div>
+                    </td>
+                  </tr>
+                  <tr class="table-body-row">
+                    <td class="table-body__column">Jerome Bell</td>
+                    <td class="table-body__column">Google</td>
+                    <td class="table-body__column">(629) 555-0129</td>
+                    <td class="table-body__column">jerome@google.com</td>
+                    <td class="table-body__column">Réunion</td>
+                    <td class="table-body__column">
+                      <div class="table-body__column_active">Active</div>
+                    </td>
+                  </tr>
+                  <tr class="table-body-row">
+                    <td class="table-body__column">Kathryn Murphy</td>
+                    <td class="table-body__column">Microsoft</td>
+                    <td class="table-body__column">(406) 555-0120</td>
+                    <td class="table-body__column">kathryn@microsoft.com</td>
+                    <td class="table-body__column">Curaçao</td>
+                    <td class="table-body__column">
+                      <div class="table-body__column_active">Active</div>
+                    </td>
+                  </tr>
+                  <tr class="table-body-row">
+                    <td class="table-body__column">Jacob Jones</td>
+                    <td class="table-body__column">Yahoo</td>
+                    <td class="table-body__column">(208) 555-0112</td>
+                    <td class="table-body__column">jacob@yahoo.com</td>
+                    <td class="table-body__column">Brazil</td>
+                    <td class="table-body__column">
+                      <div class="table-body__column_active">Active</div>
+                    </td>
+                  </tr>
+                  <tr class="table-body-row">
+                    <td class="table-body__column">Kristin Watson</td>
+                    <td class="table-body__column">Facebook</td>
+                    <td class="table-body__column">(704) 555-0127</td>
+                    <td class="table-body__column">kristin@facebook.com</td>
+                    <td class="table-body__column">Åland Islands</td>
+                    <td class="table-body__column">
+                      <div class="table-body__column_inactive">Inactive</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content-footer">
+              <p class="content-footer__amount">Showing data 1 to 8 of  256K entries</p>
+              <nav>
+                <ul class="content-footer-pagination">
+                  <li><a class="content-footer__btn" href="#"> <span><</span></a></li>
+                  <li><a class="content-footer__btn content-footer__btn_active" href="#"> <span>1</span></a></li>
+                  <li><a class="content-footer__btn" href="#"> <span>2</span></a></li>
+                  <li><a class="content-footer__btn" href="#"> <span>3</span></a></li>
+                  <li><a class="content-footer__btn" href="#"> <span>4</span></a></li><span class="content-footer__breadcrumbs">...</span>
+                  <li><a class="content-footer__btn" href="#"> <span>40</span></a></li>
+                  <li><a class="content-footer__btn" href="#"> <span>></span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </main>
+        <div class="sidebar"></div>
+      </div>
+    </div>
+  </body>
+</html>

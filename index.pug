@@ -1,0 +1,70 @@
+include data/customersList.pug
+
+doctype html
+html(lang="en")
+  include components/head.pug
+  body
+    .wrapper
+      .container
+        main.main-wrapper
+          .greeting
+            p.greeting__text Hello Evano 👋🏼,
+          .content
+            .content-header
+              .content-header-desc
+                h2.content-header-title All Customers
+                p.content-header-subtitle Active Members
+              .content-header-search
+                label.content-header-search__label(for="search")
+                  include img/icons/search.svg
+                input.content-header-search__input(type="text", placeholder="Search", id="search")
+            .table-wrapper
+              table.table
+                thead.table-header
+                  tr.table-header-row            
+                    th.table-header__column Customer Name
+                    th.table-header__column Company
+                    th.table-header__column Phone Number
+                    th.table-header__column Email
+                    th.table-header__column Country
+                    th.table-header__column Status
+                tbody.table-body
+                  each obj in customers
+                    tr.table-body-row
+                      each val in obj
+                        case val
+                          when "Active"
+                            td.table-body__column
+                              .table-body__column_active=val
+                          when "Inactive"
+                            td.table-body__column
+                              .table-body__column_inactive=val
+                          default
+                            td.table-body__column=val
+            .content-footer
+              p.content-footer__amount Showing data 1 to 8 of  256K entries
+              nav
+                ul.content-footer-pagination
+                  li
+                    a(href="#", class="content-footer__btn") 
+                      span <
+                  li
+                    a(href="#", class="content-footer__btn content-footer__btn_active") 
+                      span 1
+                  li
+                    a(href="#", class="content-footer__btn") 
+                      span 2
+                  li
+                    a(href="#", class="content-footer__btn") 
+                      span 3
+                  li
+                    a(href="#", class="content-footer__btn") 
+                      span 4
+                  span.content-footer__breadcrumbs ...
+                  li
+                    a(href="#", class="content-footer__btn") 
+                      span 40
+                  li
+                    a(href="#", class="content-footer__btn") 
+                      span >
+        .sidebar

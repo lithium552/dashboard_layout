@@ -1,0 +1,53 @@
+include ../data/customersList.pug
+
+.main__product
+  .main__product__header
+    .main__product__header__wrapper
+      .main__product__header__title
+        h2 All Customers
+        p Active Members
+      .main__product__header__search
+        label(for="search")
+          include ../icons/searchIcon.pug
+        input(type="text", placeholder="Search", id="search")
+  .main__product__list
+    .main__product__list__header
+      ul 
+        li Customer Name
+        li Company
+        li Phone Number
+        li Email
+        li Country
+        li Status
+    hr
+    .main__product__list__content
+      ul
+        each obj in customers
+          each val in obj
+            case val
+              when "Active"
+                li.active
+                  p Active
+                hr
+              when "Inactive"
+                li.inactive
+                  p Inactive
+                hr
+              default
+                li= val
+  .main__product__navigation
+    .main__product__navigation__quantity
+      p Showing data 1 to 8 of  256K entries
+    .main__product__navigation__pagination
+      button <
+      button.active 1
+      button 2
+      button 3
+      button 4
+      span ...
+      button 40
+      button >
+
+            
+
+
