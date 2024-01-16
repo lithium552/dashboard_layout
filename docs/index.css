@@ -580,6 +580,7 @@ body {
   }
   .table-wrapper {
     overflow-x: scroll;
+    overflow-y: visible;
   }
   .table-body {
     overflow-x: scroll;
@@ -636,17 +637,24 @@ body {
 @media (max-width: 768px) {
   .container {
     display: flex;
+    justify-content: center;
     gap: 10px;
   }
   .sidebar {
     display: none;
   }
+  .greeting {
+    margin: 0 0 0 auto;
+  }
   .sidebar-mobile {
     display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
     margin: auto;
   }
   .main-wrapper {
-    width: 85%;
+    width: 95%;
     padding: 0;
   }
 }
